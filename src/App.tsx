@@ -1,5 +1,11 @@
+import Button from "./components/ui/button/Button";
+
 const App = () => {
-  return <div className="text-9xl">App</div>;
+  return (
+    <div className="p-20">
+      <Button>Mark as Paid</Button>
+    </div>
+  );
 };
 
 export default App;

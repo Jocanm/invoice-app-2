@@ -4,15 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --open",
+    "dev": "vite --open",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "fix": "eslint --fix ."
   },
   "dependencies": {
+    "clsx": "^1.2.1",
+    "cva": "npm:class-variance-authority",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "tailwind-merge": "^1.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
