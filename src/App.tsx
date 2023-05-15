@@ -1,9 +1,15 @@
 import Button from "./components/ui/button/Button";
 
 const App = () => {
+  const onClick = () => {
+    console.log("clicked");
+  };
+
   return (
-    <div className="p-20">
-      <Button>Mark as Paid</Button>
+    <div className="flex items-center justify-center w-full h-screen">
+      <Button onClick={onClick} isPrimaryIcon>
+        New Invoice
+      </Button>
     </div>
   );
 };
