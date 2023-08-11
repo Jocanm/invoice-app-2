@@ -52,13 +52,13 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   ...props
 }) => {
-  const myClassName = clsx(
+  const buttonClassName = clsx(
     buttonStyle({ variant, isPrimaryIcon }),
     props.className,
   );
 
   return (
-    <button {...props} type={type} className={myClassName}>
+    <button {...props} type={type} className={buttonClassName}>
       {StartIcon && !isPrimaryIcon && withIconContainer(<StartIcon />)}
       <If condition={isPrimaryIcon}>
         {withIconContainer(
